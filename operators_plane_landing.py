@@ -2,23 +2,26 @@
 
 #data
 
-plane_altitude_max = 500 #meters. Maximal for landing. 
-plane_altitude_min = 100 #meters. Minimal for landing. 
+#current parameters of plane
 
-plane_speed_max = 300 #km/hours
-plane_speed_min = 200 #km/hours
+plane_altitude = 500 #meters
+plane_speed = 300 #km/hours
+fuel_volume = 67 #perсent
+technical_difficulites = False
+
+#weather
 
 wind_speed = 100 #km/hours
 fair_wind = True
 
-fuel_volume_min = 1 #perсent
 
-technical_difficulites = True
+
+
 
 
 #logic
 
-#can_land = plane_altitude < 700 and plane_speed < 500
+can_land = 
 
 
 
