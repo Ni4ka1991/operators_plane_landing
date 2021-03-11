@@ -9,6 +9,7 @@ plane_speed = 300 #km/hours
 fuel_volume = 67 #perсent
 technical_difficulites = False
 
+
 	#weather
 
 wind_speed = 60  #km/hours
@@ -28,7 +29,7 @@ optimal_altitude = 700  > plane_altitude >= 100
 optimal_speed    = 500 >   plane_speed   >= 200 
 
 
-can_land = 
+can_land = tehnical_difficulites = True and fuel_volume < 1
 
 
 
