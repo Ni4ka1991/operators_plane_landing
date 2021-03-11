@@ -2,17 +2,21 @@
 
 #data
 
-#current parameters of plane
+	#current parameters of plane
 
 plane_altitude = 500 #meters
 plane_speed = 300 #km/hours
 fuel_volume = 67 #perсent
 technical_difficulites = False
 
-#weather
+	#weather
 
-wind_speed = 100 #km/hours
-fair_wind = True
+wind_speed = 60  #km/hours
+fair_wind = False
+
+	#other conditions
+
+runway_clear = True
 
 
 
@@ -20,6 +24,9 @@ fair_wind = True
 
 
 #logic
+optimal_altitude = 700  > plane_altitude >= 100
+optimal_speed    = 500 >   plane_speed   >= 200 
+
 
 can_land = 
 
