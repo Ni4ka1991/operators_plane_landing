@@ -20,11 +20,8 @@ fair_wind = False
 runway_clear = True
 
 
-
-
-
-
 #logic
+
 optimal_altitude = 700  > plane_altitude >= 100
 optimal_speed    = 500 >   plane_speed   >= 200 
 
