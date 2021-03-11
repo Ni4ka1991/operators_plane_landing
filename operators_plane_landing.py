@@ -6,7 +6,7 @@
 
 plane_altitude = 500 #meters
 plane_speed = 300 #km/hours
-fuel_volume = 67 #perсent
+fuel_volume = 10 #perсent
 technical_difficulites = False
 
 
@@ -25,23 +25,24 @@ runway_clear = True
 optimal_altitude = 700  > plane_altitude >= 100
 optimal_speed    = 500 >   plane_speed   >= 200 
 
-emergency_landing = tehnical_difficulites = True\
+emergency_landing = tehnical_difficulites = False\
                     or\
                     fuel_volume < 1
 
-can_land = emergency_landing = True\
+
+can_land = emergency_landing\
            or\
-           optimal_altitude = True\
+           (optimal_speed\
            and\
-           optimal_speed  =   True\
+           optimal_altitude\
            and\
            wind_speed < 100\
            and\
-           fair_wind = False\
-           and\
-           runway_clear = True
-
-
+           runway_clear)
 #view
 
-print("Can the plane land?", can_land)
+print("Aircraft flight parameters:")
+print('-'* 27)
+print("Plane altitude = ", plane_altitude, "km")
+print("Plane speed    = ", plane_speed, "km/hours")
+print("Fuel level     = ", fuel_volume, ' %')
