@@ -28,11 +28,23 @@ runway_clear = True
 optimal_altitude = 700  > plane_altitude >= 100
 optimal_speed    = 500 >   plane_speed   >= 200 
 
+emergency_landing = tehnical_difficulites = True\
+                    or\
+                    fuel_volume < 1
 
-can_land = tehnical_difficulites = True and fuel_volume < 1
-
+can_land = emergency_landing = True\
+           or\
+           optimal_altitude = True\
+           and\
+           optimal_speed  =   True\
+           and\
+           wind_speed < 100\
+           and\
+           fair_wind = False\
+           and\
+           runway_clear = True
 
 
 #view
 
-#print("Can the plane land?", can_land)
+print("Can the plane land?", can_land)
