@@ -4,7 +4,7 @@
 
 	#current parameters of plane
 
-plane_altitude = 1000 #meters
+plane_altitude = 500 #meters
 plane_speed = 300 #km/hours
 fuel_volume = 10 #perсent
 technical_difficulites = False
