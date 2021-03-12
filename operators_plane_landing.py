@@ -4,7 +4,7 @@
 
 	#current parameters of plane
 
-plane_altitude = 500 #meters
+plane_altitude = 1000 #meters
 plane_speed = 300 #km/hours
 fuel_volume = 10 #perсent
 technical_difficulites = False
@@ -25,7 +25,7 @@ runway_clear = True
 optimal_altitude = 700  > plane_altitude >= 100
 optimal_speed    = 500 >   plane_speed   >= 200 
 
-emergency_landing = tehnical_difficulites = False\
+emergency_landing = technical_difficulites\
                     or\
                     fuel_volume < 1
 
@@ -46,3 +46,9 @@ print('-'* 27)
 print("Plane altitude = ", plane_altitude, "km")
 print("Plane speed    = ", plane_speed, "km/hours")
 print("Fuel level     = ", fuel_volume, ' %')
+print("Wind speed     = ", wind_speed, "km/hours")
+#print("Wind direction = ", fair_wind)
+print("."*27)
+print("Technical difficulites: ", technical_difficulites)
+print()
+print("Can plane land?", can_land)
